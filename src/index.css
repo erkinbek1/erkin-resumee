@@ -1,13 +1,297 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ADAPTIVE START */
+/* 1024 START */
+@media all and (max-width: 1024px) {
+  nav img {
+    width: 100px;
+    height: 100px;
+  }
+  .nav__container_info {
+    width: 50%;
+  }
+  .nav__container_info p {
+    font-size: 14px;
+  }
+  .section__container_profile p {
+    font-size: 15px;
+  }
+  .section__container_profile h1 {
+    font-size: 25px;
+  }
+  .sidebar__container_left p {
+    width: 55%;
+    font-size: 13px;
+  }
+  .sidebar__container_right p {
+    width: 55%;
+    font-size: 13px;
+  }
 }
+/* 1024 END */
+/* 768 START */
+@media all and (max-width: 768px) {
+  nav img {
+    width: 75px;
+    height: 75px;
+  }
+  .nav__container_info {
+    width: 50%;
+  }
+  .nav__container_info p {
+    font-size: 13px;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  .section__container_profile p {
+    font-size: 11px;
+  }
+  .section__container_profile h1 {
+    font-size: 22px;
+  }
+  .sidebar__container_intro p:first-child {
+    font-size: 25px;
+  }
+  .sidebar__container_intro p:nth-child(2) {
+    font-size: 25px;
+  }
+  .sidebar__container_intro h3 {
+    width: 100%;
+    height: 50%;
+    font-size: 15px;
+  }
+  .sidebar__container_left h3 {
+    font-size: 17px;
+  }
+  .sidebar__container_right h3 {
+    font-size: 17px;
+  }
+  .sidebar__container_left p {
+    width: 70%;
+    font-size: 15px;
+  }
+  .sidebar__container_right p {
+    width: 70%;
+    font-size: 15px;
+  }
+  .sidebar__container_left ul {
+    font-size: 12px;
+    width: 60%;
+  }
+  .sidebar__container_right ul {
+    font-size: 12px;
+    width: 60%;
+  }
+  .footer__container_first {
+    width: 80%;
+  }
+  .footer__container_second {
+    width: 80%;
+  }
+  .footer__container_first div img {
+    width: 25px;
+    height: 25px;
+  }
+  .footer__container_second div img {
+    width: 25px;
+    height: 25px;
+  }
+  .footer__container_first div p {
+    font-size: 10px;
+  }
+  .footer__container_second div p {
+    font-size: 11px;
+  }
+  .nav__container_btn {
+    width: 20%;
+  }
+  .nav__container_btn button {
+    width: 45%;
+  }
 }
+/* 768 END */
+/* 426 START */
+@media all and (max-width: 426px) {
+  nav img {
+    width: 50px;
+    height: 50px;
+  }
+  .nav__container_info,
+  .nav__container_btn,
+  .nav__container_info p,
+  .nav__container_btn button {
+    display: none;
+  }
+  .nav__container_burger {
+    display: block;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__container_burger img {
+    width: 40px;
+    height: 40px;
+  }
+  .section__container_left hr {
+    width: 85%;
+    height: 2%;
+  }
+  .section__container_left img {
+    width: 80%;
+    height: 80%;
+  }
+  .section__container_profile h1 {
+    font-size: 20px;
+  }
+  .section__container_profile p {
+    font-size: 8px;
+  }
+  .sidebar__container_intro p:first-child {
+    font-size: 22px;
+  }
+  .sidebar__container_intro p:nth-child(2) {
+    font-size: 22px;
+  }
+  .sidebar__container_intro h3 {
+    width: 130%;
+    height: 70%;
+    font-size: 11px;
+  }
+  .sidebar__container_left h3 {
+    font-size: 13px;
+  }
+  .sidebar__container_right h3 {
+    font-size: 14px;
+  }
+  .sidebar__container_left p {
+    width: 90%;
+    font-size: 10px;
+  }
+  .sidebar__container_right p {
+    width: 90%;
+    font-size: 10px;
+  }
+  .sidebar__container_left ul {
+    font-size: 10px;
+    width: 80%;
+  }
+  .sidebar__container_right ul {
+    font-size: 10px;
+    width: 80%;
+  }
+  .footer__container_first {
+    width: 100%;
+  }
+  .footer__container_second {
+    width: 100%;
+  }
+  .footer__container_first div img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer__container_second div img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer__container_first div p {
+    font-size: 9px;
+  }
+  .footer__container_second div p {
+    font-size: 9px;
+  }
+}
+/* 426 END */
+/* 376 START */
+@media all and (max-width: 376px) {
+  .section__container {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .section__container_left hr {
+    width: 100%;
+    height: 20%;
+    margin-top: 10px;
+  }
+  .section__container_left img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+  }
+  .section__container_right {
+    width: 85%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .section__container_profile {
+    align-items: center;
+  }
+  .section__container_profile h1 {
+    font-size: 18px;
+  }
+  .section__container_profile p {
+    font-size: 11px;
+  }
+  .sidebar__container_intro h3 {
+    width: 170%;
+    height: 70%;
+    font-size: 11px;
+  }
+  .sidebar__container_details {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar__container_left {
+    width: 100%;
+  }
+  .sidebar__container_right {
+    border-left: none;
+    border-top: 2px solid white;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .sidebar__container_left h3 {
+    font-size: 18px;
+  }
+  .sidebar__container_right h3 {
+    font-size: 18px;
+  }
+  .sidebar__container_left p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .sidebar__container_right p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .sidebar__container_left ul {
+    font-size: 11px;
+    width: 80%;
+  }
+  .sidebar__container_right ul {
+    font-size: 11px;
+    width: 80%;
+  }
+  .footer__container_first {
+    flex-direction: column;
+    width: 80%;
+  }
+  .footer__container_second {
+    flex-direction: column;
+    width: 80%;
+  }
+  .footer__container_first div {
+    justify-content: start;
+    width: 80%;
+  }
+  .footer__container_second div {
+    justify-content: start;
+    width: 80%;
+  }
+  .footer__container_first div p {
+    font-size: 11px;
+  }
+  .footer__container_second div p {
+    font-size: 11px;
+  }
+}
+/* 376 END */
+/* ADAPTIVE END */
